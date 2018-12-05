@@ -9,6 +9,8 @@ public class Sort {
                     smallIdx = j;
                 }
             }
+            ary[smallIdx] = ary[i];
+            ary[i] = smallest;
         }
     }
     public static void main(String[] args) {
