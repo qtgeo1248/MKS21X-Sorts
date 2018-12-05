@@ -1,8 +1,8 @@
 import java.util.Arrays;
 import java.util.Random;
 
-public class Sort {
-    public static void selectionsort(int[] ary) {
+public class Sorts {
+    public static void selectionSort(int[] ary) {
         for (int i = 0; i < ary.length; i++) {
             int smallest = ary[i];
             int smallIdx = i; //keeps track of smallest and the index its at
@@ -20,7 +20,7 @@ public class Sort {
         int totalWrongs = 0;
 
         int[] test1 = {7, 3, 9, 1, 6, 0, 4, 8, 2, 5};
-        selectionsort(test1); //ans = [0,1,2,3,4,5,6,7,8,9]
+        selectionSort(test1); //ans = [0,1,2,3,4,5,6,7,8,9]
         for (int i = 0; i < test1.length; i++) {
             if (i != test1[i]) {
                 System.out.println("omg you failed test1 omg omg");
@@ -30,14 +30,14 @@ public class Sort {
 
         int[] test2 = new int[0]; //ans = []
         try {
-            selectionsort(test2);
+            selectionSort(test2);
         } catch (IndexOutOfBoundsException e) {
             System.out.println("aiyahh you failed test2");
             System.exit(1);
         }
 
         int[] test3 = {7, 3, 9, 1, 6, 0, 4, 8, 2, 5, 6, 2, 4, 1, 9, 0, 3, 7, 8, 5};
-        selectionsort(test3); //ans = [0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9]
+        selectionSort(test3); //ans = [0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9]
         for (int i = 0; i < test3.length; i++) {
             if (i / 2 != test3[i]) {
                 System.out.println("omg you failed test3 omg omg");
@@ -53,7 +53,7 @@ public class Sort {
                 key[j] = toAdd;
                 test[j] = toAdd;
             }
-            selectionsort(test);
+            selectionSort(test);
             Arrays.sort(key); //built in sort
             boolean isEqual = true;
             for (int i = 0; i < key.length; i++) {
