@@ -2,18 +2,24 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Sorts {
-    public static void selectionSort(int[] ary) {
-        for (int i = 0; i < ary.length; i++) {
-            int smallest = ary[i];
+    public static void selectionSort(int[] data) {
+        for (int i = 0; i < data.length; i++) {
+            int smallest = data[i];
             int smallIdx = i; //keeps track of smallest and the index its at
-            for (int j = i; j < ary.length; j++) {
-                if (ary[j] < smallest) {
-                    smallest = ary[j];
+            for (int j = i; j < data.length; j++) {
+                if (data[j] < smallest) {
+                    smallest = data[j];
                     smallIdx = j; //if you find a smaller one, replace all var
                 }
             }
-            ary[smallIdx] = ary[i];
-            ary[i] = smallest; //do a swap swap thingy
+            data[smallIdx] = data[i];
+            data[i] = smallest; //do a swap swap thingy
+        }
+    }
+    public static void bubbleSort(int[] data) {
+        boolean isDone = false;
+        while (!isDone) {
+            isDone = true;
         }
     }
     public static void main(String[] args) {
