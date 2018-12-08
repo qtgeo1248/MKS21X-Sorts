@@ -21,7 +21,7 @@ public class Sorts {
         while (!isDone) {
             isDone = true;
             for (int idx = 0; idx < data.length - 1; idx++) {
-                if (data[idx] > data[idx] + 1) {
+                if (data[idx] > data[idx + 1]) {
                     int first = data[idx];
                     int second = data[idx + 1];
                     data[idx] = second;
@@ -70,5 +70,8 @@ public class Sorts {
         int[] Ktest2 = {5, 1, 12, -5, 16, 2, 12, 14};
         selectionSort(Ktest2);
         System.out.println();
+
+        int[] KtestBubble1 = {5, 1, 12, - 5, 16};
+        bubbleSort(KtestBubble1);
     }
 }
