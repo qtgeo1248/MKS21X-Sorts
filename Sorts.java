@@ -20,6 +20,12 @@ public class Sorts {
         boolean isDone = false;
         while (!isDone) {
             isDone = true;
+            for (int idx = 0; idx < data.length - 1; idx++) {
+                if (data[idx] > data[idx] + 1) {
+                    int first = data[idx];
+                    int second = data[idx + 1];
+                }
+            }
         }
     }
     public static void main(String[] args) {
