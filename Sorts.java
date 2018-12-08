@@ -28,7 +28,6 @@ public class Sorts {
                     data[idx + 1] = first;
                     isDone = false;
                 }
-                System.out.println(Arrays.toString(data));
             }
         }
     }
@@ -73,5 +72,9 @@ public class Sorts {
 
         int[] KtestBubble1 = {5, 1, 12, - 5, 16};
         bubbleSort(KtestBubble1);
+        int[] KtestBubble2 = {2, 3, 4, 5, 1};
+        bubbleSort(KtestBubble2);
+        int[] KtestBubble3 = {6, 1, 2, 3, 4, 5};
+        bubbleSort(KtestBubble3);
     }
 }
