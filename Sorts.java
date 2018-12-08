@@ -24,7 +24,11 @@ public class Sorts {
                 if (data[idx] > data[idx] + 1) {
                     int first = data[idx];
                     int second = data[idx + 1];
+                    data[idx] = second;
+                    data[idx + 1] = first;
+                    isDone = false;
                 }
+                System.out.println(Arrays.toString(data));
             }
         }
     }
