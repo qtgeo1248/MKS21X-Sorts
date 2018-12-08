@@ -54,30 +54,5 @@ public class Sorts {
         int[] Ktest2 = {5, 1, 12, -5, 16, 2, 12, 14};
         selectionSort(Ktest2);
         System.out.println();
-
-        /*
-        Random rng = new Random();
-        for (int idx = 0; idx < 10000; idx++) {//tests 10000 times
-            int[] key = new int[1000]; //each with 1000 elements :)))
-            int[] test = new int[1000];
-            for (int j = 0; j < key.length; j++) {
-                int toAdd = rng.nextInt();
-                key[j] = toAdd;
-                test[j] = toAdd;
-            }
-            selectionSort(test);
-            Arrays.sort(key); //built in sort
-            boolean isEqual = true;
-            for (int i = 0; i < key.length; i++) {
-                if (key[i] != test[i]) {
-                    isEqual = false;
-                }
-            }
-            if (!isEqual) {
-                totalWrongs++;
-            }
-        }
-        System.out.println("How many wrongs: " + totalWrongs);
-        */
     }
 }
