@@ -14,7 +14,6 @@ public class Sorts {
             }
             ary[smallIdx] = ary[i];
             ary[i] = smallest; //do a swap swap thingy
-            System.out.println(Arrays.toString(ary));
         }
     }
     public static void main(String[] args) {
@@ -54,7 +53,7 @@ public class Sorts {
         System.out.println();
         int[] Ktest2 = {5, 1, 12, -5, 16, 2, 12, 14};
         selectionSort(Ktest2);
-        System.out.println(); 
+        System.out.println();
 
         /*
         Random rng = new Random();
