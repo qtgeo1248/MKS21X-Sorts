@@ -31,6 +31,9 @@ public class Sorts {
             }
         }
     }
+    public static void insertionSort(int[] data) {
+        
+    }
     public static void main(String[] args) {
         int totalWrongs = 0;
 
