@@ -32,7 +32,15 @@ public class Sorts {
         }
     }
     public static void insertionSort(int[] data) {
-        
+        for (int i = 0; i < data.length; i++) {
+            boolean isDone = false;
+            int now = data[i];
+            for (int j = i - 1; j >= 0 && !isDone; j++) {
+                if (data[j] > now) {
+                    
+                }
+            }
+        }
     }
     public static void main(String[] args) {
         int totalWrongs = 0;
