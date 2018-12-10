@@ -37,7 +37,8 @@ public class Sorts {
             int now = data[i];
             for (int j = i - 1; j >= 0 && !isDone; j++) {
                 if (data[j] > now) {
-                    
+                    data[j + 1] = data[j]; //shifts elements forwords
+                    data[j] = now;
                 }
             }
         }
