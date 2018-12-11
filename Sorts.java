@@ -32,21 +32,22 @@ public class Sorts {
         }
     }
     public static void insertionSort(int[] data) {
+        System.out.println(Arrays.toString(data));
         for (int i = 0; i < data.length; i++) {
             boolean isDone = false;
             int now = data[i];
-            for (int j = i - 1; j >= 0 && !isDone; j++) {
+            for (int j = i - 1; j >= 0 && !isDone; j--) {
                 if (data[j] > now) {
                     data[j + 1] = data[j]; //shifts elements forwords
                     data[j] = now;
                 } else {
                     isDone = true;
                 }
-                System.out.println(Arrays.toString(data));
             }
         }
     }
     public static void main(String[] args) {
+        /*
         int totalWrongs = 0;
 
         int[] test1 = {7, 3, 9, 1, 6, 0, 4, 8, 2, 5};
@@ -77,6 +78,7 @@ public class Sorts {
             }
         }
         System.out.println();
+        */
 
         int[] KtestSelection1 = {7, 5, 4, 2};
         selectionSort(KtestSelection1);
@@ -91,5 +93,10 @@ public class Sorts {
         bubbleSort(KtestBubble2);
         int[] KtestBubble3 = {6, 1, 2, 3, 4, 5};
         bubbleSort(KtestBubble3);
+
+        int[] KtestInsertion1 = {4, 3, 2, 10, 12, 1, 5, 6};
+        insertionSort(KtestInsertion1);
+        int[] KtestInsertion2 = {4, 2, 9, 5, 10, 21, -4, 3, 6};
+        insertionSort(KtestInsertion2);
     }
 }
