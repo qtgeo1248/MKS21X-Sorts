@@ -32,7 +32,6 @@ public class Sorts {
         }
     }
     public static void insertionSort(int[] data) {
-        System.out.println(Arrays.toString(data));
         for (int i = 0; i < data.length; i++) {
             boolean isDone = false;
             int now = data[i];
@@ -98,5 +97,7 @@ public class Sorts {
         insertionSort(KtestInsertion1);
         int[] KtestInsertion2 = {4, 2, 9, 5, 10, 21, -4, 3, 6};
         insertionSort(KtestInsertion2);
+        int[] KtestInsertion3 = {};
+        insertionSort(KtestInsertion3);
     }
 }
