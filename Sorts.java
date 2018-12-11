@@ -35,6 +35,13 @@ public class Sorts {
         for (int i = 1; i < data.length; i++) {
             boolean isDone = false;
             int now = data[i];
+            int j = i - 1;
+            while (j > -1 && data[j] > now) {
+                data[j + 1] = data[j];
+                j--;
+            }
+            data[j + 1] = now;
+            /*
             for (int j = i - 1; j >= -1 && !isDone; j--) {
                 if (j >= 0 && data[j] > now) {
                     data[j + 1] = data[j]; //shifts elements forwords
@@ -43,6 +50,7 @@ public class Sorts {
                     isDone = true;
                 }
             }
+            */
         }
     }
     public static void main(String[] args) {
