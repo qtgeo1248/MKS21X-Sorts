@@ -39,7 +39,10 @@ public class Sorts {
                 if (data[j] > now) {
                     data[j + 1] = data[j]; //shifts elements forwords
                     data[j] = now;
+                } else {
+                    isDone = true;
                 }
+                System.out.println(Arrays.toString(data));
             }
         }
     }
@@ -75,11 +78,11 @@ public class Sorts {
         }
         System.out.println();
 
-        int[] Ktest1 = {7, 5, 4, 2};
-        selectionSort(Ktest1);
+        int[] KtestSelection1 = {7, 5, 4, 2};
+        selectionSort(KtestSelection1);
         System.out.println();
-        int[] Ktest2 = {5, 1, 12, -5, 16, 2, 12, 14};
-        selectionSort(Ktest2);
+        int[] KtestSelection2 = {5, 1, 12, -5, 16, 2, 12, 14};
+        selectionSort(KtestSelection2);
         System.out.println();
 
         int[] KtestBubble1 = {5, 1, 12, - 5, 16};
