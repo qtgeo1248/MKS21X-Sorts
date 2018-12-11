@@ -32,14 +32,14 @@ public class Sorts {
         }
     }
     public static void insertionSort(int[] data) {
-        for (int i = 0; i < data.length; i++) {
+        for (int i = 1; i < data.length; i++) {
             boolean isDone = false;
             int now = data[i];
-            for (int j = i - 1; j >= 0 && !isDone; j--) {
-                if (data[j] > now) {
+            for (int j = i - 1; j >= -1 && !isDone; j--) {
+                if (j >= 0 && data[j] > now) {
                     data[j + 1] = data[j]; //shifts elements forwords
-                    data[j] = now;
                 } else {
+                    data[j + 1] = now;
                     isDone = true;
                 }
             }
